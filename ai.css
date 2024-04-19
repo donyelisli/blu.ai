@@ -1,0 +1,7 @@
+.chat-message {
+    margin-bottom: 10px; /* Adjust the margin as needed */
+    margin-top: 10px;
+}
+.sender {
+    font-weight: bold; /* Optional: Add bold font for sender */
+}

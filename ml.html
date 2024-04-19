@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blu.AI</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <style>
+        /* Inserted CSS Code */
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #4a148c, #311b92); /* Purple gradient background */
+            color: #333; /* Dark grey text */
+            line-height: 1.6;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+            position: relative; /* Set position relative for background */
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 3em;
+            color: #ffffff; /* White header */
+        }
+
+        h2 {
+            color: #ffffff; /* White subheadings */
+        }
+
+        .navbar {
+            position: relative;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            flex-grow: 1;
+        }
+
+        .menu-button {
+            cursor: pointer;
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            transform: translateY(-20px);
+            opacity: 0;
+            transition: transform 0.4s ease, opacity 0.4s ease;
+            pointer-events: none;
+        }
+
+        .nav-menu.active {
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .nav-link {
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #4a148c; /* Purple hover color */
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff; /* White background */
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            animation: fadeIn 0.5s ease forwards; /* Apply fade-in animation */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #4a148c; /* Purple labels */
+        }
+
+        input[type="number"] {
+            width: calc(100% - 12px); /* Adjust for input padding */
+            padding: 6px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: #4a148c; /* Purple button */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease; /* Add transition */
+        }
+
+        button:hover {
+            background: #311b92; /* Darker purple on hover */
+            transform: scale(1.05); /* Slightly scale up on hover */
+        }
+
+        /* Add box-shadow to inputs on focus */
+        input[type="number"]:focus {
+            box-shadow: 0 0 5px rgba(74, 20, 140, 0.7); /* Purple shadow on focus */
+        }
+
+        /* Add fade-in animation to form */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Result section styling */
+        .result {
+            background-color: #4a148c; /* Dark purple background */
+            color: #fff; /* White text */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+            opacity: 1; /* Show result initially */
+            transition: opacity 0.5s ease; /* Add transition */
+        }
+
+        /* Add a smooth scroll effect */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Background polygon animation */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            background: linear-gradient(to bottom, #311b92, #000000); /* Darker hue background */
+            opacity: 0.3; /* Adjust opacity */
+            animation: polygonAnimation 20s linear infinite alternate; /* Add animation */
+        }
+
+        @keyframes polygonAnimation {
+            from {
+                transform: translateY(0) rotate(0deg);
+            }
+            to {
+                transform: translateY(-50vh) rotate(360deg); /* Adjust translateY and rotation */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <!-- Inside the navigation menu -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="brand"> <!-- Brand logo or name -->
+                <a href="homepage.html"><img src="Blu.png" alt="Logo" width="100" height="100"></a>
+            </div>
+            <div class="menu-button"> <!-- Menu button -->
+                <!-- Add menu button content -->
+            </div>
+        </div>
+        <div class="nav-menu"> <!-- Menu items -->
+            <a href="homepage.html" class="nav-link">Home</a>
+            <!-- Add more menu items here if needed -->
+        </div>
+    </nav>
+        <a href="homepage.html" class="nav-link">Home</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contacts.html" class="nav-link">Contacts</a>
+    <div class="navbar" role="banner">
+        <div class="nav-container">
+            <!-- You can add your own logo or branding here -->
+            <div class="brand">
+                <!-- Your logo or branding goes here -->
+            </div>
+            <div class="menu-button"></div>
+            <nav class="nav-menu">
+                <a href="/works" class="nav-link">Works</a>
+                <a href="/services" class="nav-link">Services</a>
+                <a href="/about" class="nav-link">About</a>
+                <!-- Add other menu items as needed -->
+            </nav>
+        </div>
+    </div>
+
+    <!-- Machine Learning Calculator Form -->
+    <div style="text-align: center;">
+      <h1>WELCOME TO BLU.AI ML!</h1>
+      <p style="color: white;">Please Input your Bare House details.</p>
+    </div>
+
+    <form action="/" method="post" onsubmit="calculate(event)">
+        <label for="budget">Budget:</label>
+        <input type="number" id="budget" name="budget" step="0.01" required><br><br>
+        <label for="num_floors">Number of Floors:</label>
+        <input type="number" id="num_floors" name="num_floors" min="1" max="3" required><br><br>
+        <div id="floor_details">
+            <!-- Floors details will be added dynamically using JavaScript -->
+        </div>
+        <button type="button" onclick="addFloor()">Add Floor</button><br><br>
+        <button type="submit">Calculate</button>
+    </form>
+
+    <!-- Result Section -->
+    <div class="result" id="resultSection" style="display: none;">
+        <!-- Result will be displayed here -->
+    </div>
+
+    <!-- JavaScript for adding dynamic floor details -->
+    <script>
+        function addFloor() {
+            var numFloors = parseInt(document.getElementById("num_floors").value);
+            var floorDiv = document.getElementById("floor_details");
+            
+            var floorDetails = "";
+            for (var i = 1; i <= numFloors; i++) {
+                var floorNum = i;
+                floorDetails += `
+                    <h3>Floor ${floorNum} Details</h3>
+                    <label for="floor_area_${floorNum}">Floor area (sqm):</label>
+                    <input type="number" id="floor_area_${floorNum}" name="floor_area_${floorNum}" step="0.01" required><br><br>
+                    <label for="num_doors_${floorNum}">Number of doors:</label>
+                    <input type="number" id="num_doors_${floorNum}" name="num_doors_${floorNum}" required><br><br>
+                    <label for="num_windows_${floorNum}">Number of windows:</label>
+                    <input type="number" id="num_windows_${floorNum}" name="num_windows_${floorNum}" required><br><br>
+                `;
+            }
+            
+            // Add roof area input field only if numFloors > 0
+            if (numFloors > 0) {
+                floorDetails += `
+                    <label for="roof_area">Roof area (sqm):</label>
+                    <input type="number" id="roof_area" name="roof_area" step="0.01" required><br><br>
+                `;
+            }
+            
+            floorDiv.innerHTML = floorDetails;
+        }
+
+        function calculate(event) {
+            event.preventDefault(); // Prevent form submission
+            var budget = parseFloat(document.getElementById("budget").value);
+            var numFloors = parseInt(document.getElementById("num_floors").value);
+            var totalCost = 0;
+            
+            for (var i = 1; i <= numFloors; i++) {
+                var floorArea = parseFloat(document.getElementById(`floor_area_${i}`).value);
+                var numDoors = parseInt(document.getElementById(`num_doors_${i}`).value);
+                var numWindows = parseInt(document.getElementById(`num_windows_${i}`).value);
+                totalCost += floorArea * 8000 + numDoors * 3860 + numWindows * 5450;
+            }
+
+            if (numFloors > 0) {
+                var roofArea = parseFloat(document.getElementById("roof_area").value);
+                totalCost += roofArea * 8000;
+            }
+
+            var resultSection = document.getElementById("resultSection");
+            resultSection.style.display = "block"; // Show result section
+            resultSection.innerHTML = "<h2>Result:</h2><p>Total Cost: " + totalCost.toFixed(2) + "</p>";
+        }
+    </script>
+
+    <!-- SVG Background -->
+    <svg class="background" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232 205">
+        <g style="mix-blend-mode:overlay">
+            <path d="M81.2325 121.052C64.7758 121.405 58.1109 100.03 71.584 90.1079L174.126 14.5887C183.458 7.71565 196.461 11.8978 199.883 22.8729L222.591 95.6986C226.013 106.674 217.881 118.113 206.482 118.358L81.2325 121.052Z" fill="#D9D9D9"/>
+        </g>
+        <path d="M72.8502 144.482C56.3909 144.733 49.8488 123.323 63.3785 113.485L166.35 38.6072C175.723 31.7914 188.706 36.0526 192.065 47.0478L214.362 120.016C217.722 131.011 209.521 142.399 198.119 142.573L72.8502 144.482Z" fill="#D9D9D9"/>
+    </svg>
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* OUR MISSION */
+.mission-heading {
+    color: white;
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+/* Blu.AI aims to simplify the construction process in Cagayan de Oro City by offering innovative web-based tools powered by AI and machine learning, providing rough cost estimating and addressing common queries for homeowners, engineers, and architects. */
+.mission-description {
+    color: white;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+/* Blu.AI is committed to its mission and vision for the Kagay-anon community. */
+.commitment {
+    color: #000728;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+/* OUR VISION */
+.vision-heading {
+    color: #000728;
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+/* Blu.AI envisions a future where construction projects in Cagayan de Oro City are seamlessly executed with the assistance of our user-friendly platform, enhancing the collaboration among stakeholders and revolutionizing the construction landscape to enhance residents' quality of life. */
+.vision-description {
+    color: #000728;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+/* BLU.AI */
+.blu-ai {
+    color: white;
+    font-size: 22px;
+    font-family: Agrandir;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+/* Platform */
+.platform {
+    color: #000728;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Team */
+.team {
+    color: #000728;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Contact */
+.contact {
+    color: #000728;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+
+/* Platform */
+.platform-heading {
+    color: #000728;
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+/* Services */
+.services {
+    color: #000728;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+}

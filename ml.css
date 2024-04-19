@@ -1,0 +1,179 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4a148c, #311b92); /* Purple gradient background */
+    color: #333; /* Dark grey text */
+    line-height: 1.6;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    position: relative; /* Set position relative for background */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3em;
+    color: #ffffff; /* White header */
+}
+
+h2 {
+    color: #ffffff; /* White subheadings */
+}
+
+p {
+    text-align: center;
+}
+
+.navbar {
+    position: relative;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    flex-grow: 1;
+}
+
+.menu-button {
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.nav-link {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #4a148c; /* Purple hover color */
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    animation: fadeIn 0.5s ease forwards; /* Apply fade-in animation */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4a148c; /* Purple labels */
+}
+
+input[type="number"] {
+    width: calc(100% - 12px); /* Adjust for input padding */
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #4a148c; /* Purple button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease; /* Add transition */
+}
+
+button:hover {
+    background: #311b92; /* Darker purple on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Add box-shadow to inputs on focus */
+input[type="number"]:focus {
+    box-shadow: 0 0 5px rgba(74, 20, 140, 0.7); /* Purple shadow on focus */
+}
+
+/* Add fade-in animation to form */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Result section styling */
+.result {
+    background-color: #4a148c; /* Dark purple background */
+    color: #fff; /* White text */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+    opacity: 1; /* Show result initially */
+    transition: opacity 0.5s ease; /* Add transition */
+}
+
+/* Add a smooth scroll effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Background polygon animation */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background: linear-gradient(to bottom, #311b92, #000000); /* Darker hue background */
+    opacity: 0.3; /* Adjust opacity */
+    animation: polygonAnimation 20s linear infinite alternate; /* Add animation */
+}
+
+@keyframes polygonAnimation {
+    from {
+        transform: translateY(0) rotate(0deg);
+    }
+    to {
+        transform: translateY(-50vh) rotate(360deg); /* Adjust translateY and rotation */
+    }
+}

@@ -1,0 +1,121 @@
+/* Styles for different sections */
+
+/* The Blueprint to the Future of Filipino Homes */
+#blueprint {
+    color: #C2CEFF;
+    font-size: 36px;
+    font-family: Poppins;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+/* Budgeting Tool */
+#budgeting-tool {
+    color: #7D94F7;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Platform, Services, Team, Contact */
+.platform,
+.services,
+.team,
+.contact {
+    color: #C3DFEA;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Log in */
+#log-in {
+    color: #C3DFEA;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Sign up */
+#sign-up {
+    color: black;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Line breaks */
+.br {
+    color: white;
+    font-size: 12px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Email */
+#email {
+    color: black;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Sign Up */
+#sign-up-text {
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Terms and Conditions */
+.terms {
+    color: black;
+    font-size: 10px;
+    font-family: Poppins;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+/* BLU.AI */
+#blu-ai {
+    color: white;
+    font-size: 22px;
+    font-family: Agrandir;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+/* Contact us */
+#contact-us {
+    color: black;
+    font-size: 25px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+/* Admin email */
+#admin-email {
+    color: black;
+    font-size: 25px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Sign up to BLU.AI */
+#sign-up-blu-ai {
+    color: black;
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+}

@@ -1,0 +1,80 @@
+/* Questions? */
+.question-text {
+    color: black;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Contact Us */
+.contact-heading {
+    color: #000728;
+    font-size: 70px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+/* Need to get in touch with the team? We’re all ears */
+.contact-description {
+    color: #000728;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+/* Email */
+.email-contact {
+    color: #000728;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+/* Phone number */
+.phone-contact {
+    color: #000728;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+/* Hey, Calli! */
+.calli-greeting {
+    color: #C2CEFF;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* BLU.AI */
+.blu-ai-text {
+    color: #080028;
+    font-size: 22px;
+    font-family: Agrandir;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+/* Platform, Services */
+.platform-services-text {
+    color: #080028;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Team, Contact */
+.team-contact-text {
+    color: #C2CEFF;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+}
